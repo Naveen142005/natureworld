@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengunis</title>  
+    <link rel="icon" href="images/nav-logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Smooch+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caudex&family=Forum&family=Playfair+Display:ital@1&family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Smooch+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@1230&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+    <style>
+        #img_tiger{
+            background: url(images/pengun.jpg);
+            background-repeat: no-repeat;
+            background-position: center ;
+            background-size: cover;
+            z-index: -2;
+        }
+        li{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        #shadow::before{
+            background-color: rgb(255, 238, 0);
+            border: 1px solid black;
+            box-shadow: 0px 0px 22px 02px rgb(255, 255, 255);
+        }
+        #before::before{transition: .5s;}
+        #before_1::before{transition: .5s;}
+        #li:hover #before::before{width: 4rem;}
+        #li:hover #before_1::before{width: 5rem;}
+    </style>
+</head>
+<body class="bg-white w-screen h-screen ">
+    <div class="w-screen h-screen ">
+        <div class=" w-screen flex justify-center absolute p-0 m-0 animate__animated animate__slideInDown animate__slow" id="hi">
+            <div class="w-3/4 p-5 rounded-b-2xl flex justify-between" style=" background-color: rgba(240, 248, 255, 0.176);
+            " >
+              <div class="w-6/12 flex items-center " id="imgge">
+                <img src="images/nav-logo.png" alt="" class="w-16 " style="border-radius: 50%;border: 2px solid rgb(245, 165, 45);">
+               <div class="pl-4  text-3xl " style="   font-family: 'Montserrat', sans-serif; font-family: 'Smooch Sans', sans-serif;color: rgb(255, 242, 0);font-weight: bolder;"> Nature World</div>
+              </div>
+                <div class="flex items-center">
+                    <ul class="flex mr-32">  
+                        <span class="pr-1 pt-1 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                              </svg>                              
+                        </span>
+                        <li class="pr-8 text-2xl  cursor-pointer mr-12 font-bold relative 
+                        " onclick="home()" id="li">
+                            HOME
+                             <span class="before:content-['']  before:absolute before:w-0 before:h-0.5  before:bg-yellow-300 before:left-0
+                            before:bottom-0  transition-all duration-1000  ease-in
+                            " id="before"> &nbsp;</span> 
+                            
+                        </li>  
+                        <li class=" text-2xl font-bold cursor-pointer relative" id="li"> <span class="before:content-['']  before:absolute before:w-0 before:h-0.5  before:bg-yellow-300 before:left-0
+                            before:bottom-0  transition-all duration-1000  ease-in" id="before_1">EXPOLRE</span>
+                         
+                        </li>
+                        <span class="pl-2 pt-1 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+                              </svg>
+                        </span>
+                    
+                </ul>
+                </div>
+            </div>
+        </div> 
+        <div id="img_tiger" class="h-4/5  w-screen  bg-cover flex items-center" > 
+           
+            <div class="relative text-slate-200 text-5xl  ml-14 tracking-wide pt-5 animate__zoomIn animate__slow animate__animated  " style="font-family: 'Montserrat', sans-serif;"> World Of 
+                <span class="before:content-[''] before:absolute before:w-px before:h-24 before:rounded-sm  before:bg-yellow-100 before:-left-1.5  animate__fadeIn animate__slow animate__animated"></span>
+                <span class="animate__fadeIn animate__slow animate__animated before:content-[''] before:absolute before:w-5 before:h-5 before:bg-yellow-200 before:rounded-full before:-left-4 before:top-0 before:border" id="shadow"></span>
+                <br>
+               <span style="font-family:'Roboto Slab', serif;" class="ml-14 text-orange-200 font-normal ">&nbsp; Pengunis &nbsp; &nbsp;&nbsp;&nbsp;</span> 
+            </div>
+           
+        </div>
+        <div class="w-screen h-36 flex justify-evenly  items-center bg-slate-100">
+            <p class="text-3xl w-1/4 flex flex-col items-center justify-center pt-2 animate__zoomIn animate__animated animate__slow" style="font-family: 'Quicksand', sans-serif; ">
+                Gallery of <br>  <span class="italic pt-2 pl-10" style="color: rgb(203, 126, 32);"> Pengunis</span>
+            </p>
+            <div class="w-9/12 flex justify-evenly items-center">
+               <div>
+                <p class="text-center text-3xl animate__animated animate__zoomIn " style="font-family: 'Domine', serif;color:rgb(47, 0, 255)"  id="species" >00</p>
+                <p class="capitalize  animate__fadeIn animate__slow animate__animated text-center">Species</p>
+               </div>
+               <div>
+                <p class="text-center text-3xl animate__animated animate__zoomIn " style="font-family: 'Domine', serif;color:rgb(47, 0, 255)" id="photos" >00</p>
+                <p class="animate__fadeIn animate__slow animate__animated text-center">Photos</p>
+               </div>
+               <div>
+                <p class="text-center text-3xl animate__animated animate__zoomIn " style="font-family: 'Domine', serif;color:rgb(47, 0, 255)" id="extinct" >00</p>
+                <p class="animate__fadeIn animate__slow animate__animated text-center">Extinct</p>
+               </div>
+               <div>
+                <p class="text-center text-3xl animate__animated animate__zoomIn " style="font-family: 'Domine', serif;color:rgb(47, 0, 255)" id="name" >00</p>
+                <p class="animate__fadeIn animate__slow animate__animated text-center">Names</p>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function home(){
+            window.open('index.html')
+        }
+        // For species
+        let s_n = 123;
+        let s_a_n = document.getElementById('species');
+        let s_i;
+    
+        // For photos
+        let p_n = 123;
+        let p_a_n = document.getElementById('photos');
+        let p_i;
+    
+        // For extinct
+        let e_n = 0;
+        let extinctAppendNumber = document.getElementById('extinct');
+        let extinctInterval;
+    
+        // For names
+        let namesNumber = 123;
+        let namesAppendNumber = document.getElementById('name');
+        let namesInterval;
+    
+        window.onload = () => {
+
+            clearInterval(s_i);
+            clearInterval(p_i);
+            clearInterval(extinctInterval);
+            clearInterval(namesInterval);
+    
+            s_i = setInterval(startSpeciesTimer,0.00001);
+            p_i = setInterval(startPhotosTimer,0.05)
+            extinctInterval = setInterval(startExtinctTimer,1300)            
+            namesInterval = setInterval(startNamesTimer,0.05)
+        }
+    
+        function startSpeciesTimer() {
+            s_n++;
+            if (s_n > 9) {
+                s_a_n.innerHTML = s_n;
+            }
+            if (s_n == 87+123) {
+                clearInterval(s_i);
+            }
+        }
+    
+        function startPhotosTimer() {
+            p_n++;
+            if (p_n > 9) {
+                p_a_n.innerHTML = p_n;
+            }
+            if (p_n == 73+123) {
+                clearInterval(p_i);
+            }
+        }
+    
+        function startExtinctTimer() {
+            e_n++;
+                extinctAppendNumber.innerHTML = e_n;
+            if (e_n == 2) {
+                extinctAppendNumber.innerHTML = e_n+ 'M';
+                clearInterval(extinctInterval);
+            }
+        }
+    
+        function startNamesTimer() {
+            namesNumber++;
+            if (namesNumber > 9) {
+                namesAppendNumber.innerHTML = namesNumber;
+            }
+            if (namesNumber == 91+123) {
+                clearInterval(namesInterval);
+            }
+        }
+        function home(){
+          window.open('index.html')
+        }
+        AOS.init();
+    </script>
+    
+    
+</body>
+</html>
